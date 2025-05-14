@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Business Forecasting in Practice</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background: #007a33;
+      /* Green from image */
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      flex: 0 0 250px;
+      /* Fixed width for sidebar */
+      background: #e9e9e9;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      color: #007a33;
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .sidebar ul li a:hover {
+      color: #007a33;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .content section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .content section:last-child {
+      border-bottom: none;
+    }
+
+    .content h2 {
+      color: #007a33;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    .content h3 {
+      color: #333;
+      font-size: 1.3rem;
+    }
+
+    .content h4 {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .content ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .content strong {
+      /* Make bold text from MD more prominent */
+      font-weight: 600;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>Modern Business Forecasting in Practice</h1>
+    <nav class="nav-links">
+      <!-- Placeholder for general site navigation if needed -->
+      <!-- <a href="#home">Home</a> -->
+      <!-- <a href="#about">About</a> -->
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Workshop Sections</h2>
+      <ul>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#goals">Workshop Goals</a></li>
+        <li><a href="#audience">Target Audience</a></li>
+        <li><a href="#dates-locations">Dates and Locations</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#day1">Day 1: Fundamentals</a></li>
+        <li><a href="#day2">Day 2: Methods</a></li>
+        <li><a href="#day3">Day 3: Decisions</a></li>
+        <li><a href="#registration">Registration and Fees</a></li>
+        <li><a href="#bio">Speakers Bio</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p><strong>In today's business landscape, data-driven solutions have transitioned from being a competitive
+            advantage to a fundamental requirement.</strong> Forecasting serves as the foundation for informed,
+          data-driven decision-making, crucial for organizations aiming to optimize their operational practices.
+          However, many organizations encounter difficulties not due to inadequate forecasting itself, but rather
+          because of a lack of structured, business-oriented methodologies for its implementation.</p>
+        <p><strong>This intensive three-day workshop offers a comprehensive, all-around introduction to forecasting for
+            business environments.</strong> Designed for professionals with no prior technical or programming
+          background, it covers the entire forecasting lifecycle—from defining what to forecast and why, to evaluating
+          results and making actionable decisions. Designed based on real-world projects from successful collaborations
+          with business partners, this workshop provides an intuitive understanding of the core forecasting principles
+          paired with step-by-step implementation strategies that have delivered measurable business value.</p>
+        <p><strong>Participants will follow a logical progression through the entire forecasting lifecycle</strong>. It
+          starts with the fundamental concepts of time series and how to scope forecasting tasks based on business
+          needs. The curriculum then explores various modeling approaches, from simple models that still deliver strong
+          business value to more advanced machine learning techniques that have reshaped how large-scale operational
+          forecasting is approached. The final sessions focus on assessing forecast quality and effectively turning
+          forecasts into actionable decisions, with a strong emphasis on understanding and managing future uncertainty.
+        </p>
+      </section>
+
+      <section id="goals">
+        <h2>Workshop Goals</h2>
+        <p>By the end of this workshop, participants will:</p>
+        <ul>
+          <li>Get familiar with the fundamental components of time series data</li>
+          <li>Gain a clear understanding of the complete forecasting lifecycle, from problem scoping to implementation.
+          </li>
+          <li>Explore a broad range of forecasting models, with detailed insights into their strengths, limitations, and
+            suitability for different types of business problems.</li>
+          <li>Learn the core principles of evaluating forecasting performance effectively</li>
+          <li>Understand how to translate forecasts into actionable strategic or operational decisions while accounting
+            for uncertainty and risk.</li>
+        </ul>
+      </section>
+
+      <section id="audience">
+        <h2>Target Audience</h2>
+        <ul>
+          <li>This workshop is designed for data scientists, business analysts, decision-makers seeking to implement
+            forecasting solutions, and applied scientists wanting to adopt industry-robust techniques.</li>
+          <li>Real-world examples from successful case studies are used throughout to ground concepts in practical
+            applications.</li>
+          <li><strong>No coding experience is required.</strong></li>
+        </ul>
+      </section>
+
+      <section id="dates-locations">
+        <h2>Dates and Locations</h2>
+        <p>Duration: 3 days, 2-2.30 hours per day</p>
+        <p>Location: (To be announced)</p>
+        <p>Dates: (To be announced)</p>
+      </section>
+
+      <section id="content">
+        <h2>Content</h2>
+        <p>The workshop covers the following topics over three days:</p>
+      </section>
+
+      <section id="day1">
+        <h3>Day 1: Forecasting Fundamentals</h3>
+        <p>Build a solid conceptual foundation for forecasting, time series understanding, and how to scope a
+          forecasting problem for business use.</p>
+        <h4>Introduction to Time Series Forecasting</h4>
+        <ul>
+          <li>What is forecasting, and why is it essential in today's business environment</li>
+          <li>Introduction to time series data, its raw components.</li>
+          <li>Investigating the connection between noise, structure, and predictability</li>
+        </ul>
+        <h4>The forecasting lifecycle</h4>
+        <ul>
+          <li>From business questions to decisions. Overview of the end-to-end forecasting lifecycle</li>
+          <li>Scoping the problem: defining what to forecast and aligning it with business objectives</li>
+          <li>Strategic vs tactical vs operational forecasts: Use cases and key differences.</li>
+          <li>How to effectively collect and analyze your time series data.</li>
+        </ul>
+      </section>
+
+      <section id="day2">
+        <h3>Day 2: Forecasting Methods</h3>
+        <p>An in-depth overview of different forecasting models of various complexities, their strengths, limitations
+          and use cases for each model family.</p>
+        <h4>Local (Statistical) Models</h4>
+        <ul>
+          <li>Simple forecasting methods that are more effective than expected.</li>
+          <li>Introduction to Exponential Smoothing: A widely used, robust, and battle-tested statistical model.</li>
+        </ul>
+        <h4>Global (Machine Learning) Models</h4>
+        <ul>
+          <li>A brief introduction to machine learning</li>
+          <li>How to effectively scale your forecasting task with machine learning</li>
+          <li>The importance of high-quality data and how it affects model performance</li>
+        </ul>
+      </section>
+
+      <section id="day3">
+        <h3>Day 3: From Forecasts to Business Decisions</h3>
+        <p>From model-building to using forecasts effectively. How to evaluate, understand risk and drive value from
+          forecasts.</p>
+        <ul>
+          <li>How to effectively determine forecast accuracy and avoid common evaluation pitfalls.</li>
+          <li>What is forecasting uncertainty, its connection to risk, and how to quantify it using prediction
+            intervals?</li>
+          <li>Turning accurate forecasts into high-quality decisions.</li>
+          <li>How to efficiently communicate your data-driven predictions and increase trust in the predictions.</li>
+        </ul>
+        <p><em>Note: The workshop will be based on examples from real-world applications.</em></p>
+      </section>
+
+      <section id="registration">
+        <h2>Registration and Fees</h2>
+        <p>Participation in this workshop is free of charge, but available seats are limited to ensure active engagement
+          and high-quality interaction. While each session is designed to be self-contained, we strongly recommend
+          attending all three days to benefit from the full progression of concepts and discussions.</p>
+        <h3>How to Register</h3>
+        <p>To register, please fill out the form at: [Link to be added]</p>
+        <p>For any questions or additional information, please contact: [Contact info to be added]</p>
+        <h3>Registration includes:</h3>
+        <p>[Details to be added]</p>
+        <p>We encourage early registration to secure your spot.</p>
+      </section>
+
+      <section id="bio">
+        <h2>Speakers Bio</h2>
+        <p><strong>Filotas Theodosiou</strong> is a senior applied researcher and lecturer at the Research Group of
+          Predictive AI and Digital Shift at VIVES University of Applied Sciences. His research focuses on designing,
+          modeling, and effectively communicating machine learning-based forecasting solutions for complex business
+          problems. With strong technical and engineering expertise evidenced by his contributions to multiple Python
+          packages, Filotas brings practical implementation knowledge to theoretical concepts. His multi-dimensional
+          forecasting experience spans diverse business challenges, including hierarchical forecasting systems, demand
+          prediction models that perform well with limited historical data, interpretable and actionable prediction
+          frameworks, and specialized forecasting solutions for highly perishable products requiring unique optimization
+          approaches.</p>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
